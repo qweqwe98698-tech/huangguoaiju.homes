@@ -1,0 +1,22 @@
+{
+  "name": "huangguoaiju-homes",
+  "version": "1.0.0",
+  "description": "黄果短剧官网 - 独立正版与SEO基础设施上线版",
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs",
+    "preview": "node server.mjs",
+    "build": "node build.js",
+    "audit": "node audit.js"
+  },
+  "keywords": [
+    "huangguoaiju",
+    "short-drama",
+    "ai",
+    "vpn",
+    "jichang",
+    "clash"
+  ],
+  "author": "huangguoaiju.homes",
+  "license": "ISC"
+}

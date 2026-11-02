@@ -1,0 +1,131 @@
+# ==============================================================================
+# 黄果短剧 (huangguoaiju.homes) 搜索引擎与生成式 AI 抓取规范
+# 官方独立主站：https://huangguoaiju.homes/
+# ==============================================================================
+
+# 1. 主流国际与国内搜索引擎爬虫
+User-agent: Googlebot
+Allow: /
+Allow: /vpn/
+Allow: /jichang/
+Allow: /clash/
+Allow: /nodes/
+Allow: /tizi/
+Allow: /free/
+Allow: /tutorial/
+Allow: /brands/
+Disallow: /go/
+Disallow: /admin/
+Disallow: /api/
+
+User-agent: bingbot
+Allow: /
+Allow: /vpn/
+Allow: /jichang/
+Allow: /clash/
+Allow: /nodes/
+Allow: /tizi/
+Allow: /free/
+Allow: /tutorial/
+Allow: /brands/
+Disallow: /go/
+Disallow: /admin/
+Disallow: /api/
+
+User-agent: Baiduspider
+Allow: /
+Allow: /vpn/
+Allow: /jichang/
+Allow: /clash/
+Allow: /nodes/
+Allow: /tizi/
+Allow: /free/
+Allow: /tutorial/
+Allow: /brands/
+Disallow: /go/
+Disallow: /admin/
+Disallow: /api/
+
+User-agent: yisouspider
+Allow: /
+Allow: /vpn/
+Allow: /jichang/
+Allow: /clash/
+Allow: /nodes/
+Allow: /tizi/
+Allow: /free/
+Allow: /tutorial/
+Allow: /brands/
+Disallow: /go/
+Disallow: /admin/
+Disallow: /api/
+
+User-agent: YisouSpider
+Allow: /
+Allow: /vpn/
+Allow: /jichang/
+Allow: /clash/
+Allow: /nodes/
+Allow: /tizi/
+Allow: /free/
+Allow: /tutorial/
+Allow: /brands/
+Disallow: /go/
+Disallow: /admin/
+Disallow: /api/
+
+# 2. 生成式 AI 与大模型搜索爬虫 (GEO 友好收录)
+User-agent: GPTBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# 3. 全局通用抓取规则
+User-agent: *
+Allow: /
+Allow: /vpn/
+Allow: /jichang/
+Allow: /clash/
+Allow: /nodes/
+Allow: /tizi/
+Allow: /free/
+Allow: /tutorial/
+Allow: /brands/
+Allow: /assets/
+Allow: /*.css
+Allow: /*.js
+Allow: /*.webp
+Allow: /*.png
+Allow: /*.ico
+Allow: /*.svg
+
+# 屏蔽内部接口与跳转通道
+Disallow: /go/
+Disallow: /admin/
+Disallow: /api/
+
+# 屏蔽低质/高负载采集爬虫
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+# 4. 正式 Sitemap 声明 (统一主域名裸域 HTTPS 规范)
+Sitemap: https://huangguoaiju.homes/sitemap.xml
